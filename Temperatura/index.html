@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graus</title>
+
+    <style>
+body{
+    font-family: Roboto;
+    background-color: whitesmoke;
+}
+#container{
+    margin: 0 auto;
+    width: auto;
+    display: table;
+    text-align: center;
+}
+#convert{
+    margin-top: 2%;
+    background-color:green;
+}
+#clear{
+    margin-top: 2%;
+    background-color: #ff0000;
+}
+#convert:hover{
+    background-color: #000d81;
+}
+input{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: black;
+    font-family: cursive, sans-serif;
+}
+::-webkit-input-placeholder{
+    color: #ccc;
+}
+:-moz-placeholder{
+    color: #ccc;
+}
+::-moz-placeholder{
+    color: #ccc;
+}
+:-ms-input-placeholder{
+    color: #ccc;
+}
+button{
+    padding: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+footer{
+    width: auto;
+    padding-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <h1>Conversor de Temperatura</h1>
+        <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" />
+
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value="" />
+        
+        <button id="convert">Converter</button>
+        <button id="clear">Resetar</button>
+        <footer>
+            <h3>Desenvolvido por Danilo Correia 2 C, turma A</h3>
+        </footer>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+</html>
